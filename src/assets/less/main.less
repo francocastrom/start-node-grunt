@@ -1,0 +1,110 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Patrick+Hand);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,600,300);
+
+@tipo_1: 'Pacifico', cursive;
+@tipo_2: 'Patrick Hand', cursive;
+@tipo_3: 'Josefin Sans', sans-serif;
+
+@white	 	: #ffffff;
+@text 		: #B8B8B8;
+@black      : #000000;
+@brown      : #463a33;
+@red        : #e8591a;
+@midblack   : #313131;
+@midgrey    : #858585;
+@cgold      : #b18328;
+@calipso	: #0FCFFF;
+
+@darkgrey   : #212121;
+@blue       : #506083;
+@grey_light : #dddddd;
+
+/*General Style*/
+
+body{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Open Sans', sans-serif;	
+}
+//padding
+.nopl{padding-left: 0px;} 
+.nopr{padding-right: 0px;}
+.pt15{padding-top: 15px;}
+.pt30{padding-top: 30px;}
+.pt60{padding-top: 60px;}
+.pt80{padding-top: 80px;}
+.pt100{padding-top: 100px;}
+.pb15{padding-bottom: 15px;}
+.pb30{padding-bottom: 30px;}
+.pb60{padding-bottom: 60px;}
+.pb80{padding-bottom: 80px;}
+.pb100{padding-bottom: 100px;}
+//centrar
+.content-center{margin-left: auto;margin-right: auto;}
+//nofloat
+.nofloat{float: none;}
+//centrar texto
+.text-center{text-align: center;}
+
+
+
+//Style 
+.sb-slidebar {
+	background-color: @black !important;	
+	padding: 20px 0px 0;
+	.sb-header{
+		background-color: @white;
+		position: relative;
+		float: left;
+		width: 100%;
+		padding: 5px;
+		
+		.sb-close{
+			float: right;
+			cursor: pointer;
+			width: 20%;
+			i{
+				float: right;
+    			padding-right: 5px;
+				color: @black;
+				line-height: 50px;
+				font-size: 1.6em;
+			}
+		}
+	}
+	.sb-menu{
+		ul{
+			float: left;
+			width: 100%;
+			margin-top: 30px;
+			padding-left: 20px;
+			list-style: none;
+			li{
+				float: left;
+				width: 100%;
+				margin-bottom: 15px;
+				a{
+					color: @white;
+					text-transform: uppercase;
+					margin-bottom: 5px;
+					float: left;
+					width: 100%;
+					font-weight: 600;
+					letter-spacing: 2px;
+					text-decoration: none;
+					font-size: .85em;
+					&:hover{
+						color: @calipso;
+					}
+					i{
+						font-size: 2em;
+					}
+				}
+			}
+		}
+	}	
+}
+
+
+
